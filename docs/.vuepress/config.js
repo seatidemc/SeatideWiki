@@ -6,7 +6,7 @@ module.exports = {
 			{ text: '首页', link: '/' },
 			{ text: '官网', link: 'https://seatide.top' }
 		],
-		sidebar: [createSidebarGroup('入门', 'intro')],
+		// sidebar: [createSidebarGroup('入门', 'intro')],
 		lastUpdated: '最后更新于',
 		search: true,
 		searchMaxSuggestions: 10

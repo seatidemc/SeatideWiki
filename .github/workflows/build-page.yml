@@ -17,7 +17,7 @@ jobs:
         run: |
           npm install
           npm run build
-          echo 'w.seatide.top' > docs/.vuepress/dist
+          echo 'w.seatide.top' > docs/.vuepress/dist/CNAME
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:

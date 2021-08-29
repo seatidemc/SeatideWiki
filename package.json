@@ -1,0 +1,36 @@
+{
+  "devDependencies": {
+    "vuepress": "^1.8.2"
+  },
+  "name": "seatide-wiki",
+  "version": "1.0.0",
+  "description": "The official wiki project for seatide.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seatidemc/SeatideWiki.git"
+  },
+  "keywords": [
+    "seatide",
+    "wiki",
+    "minecraft"
+  ],
+  "author": "seatidemc",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seatidemc/SeatideWiki/issues"
+  },
+  "homepage": "https://github.com/seatidemc/SeatideWiki#readme",
+  "dependencies": {
+    "@vuepress/plugin-last-updated": "^1.8.2",
+    "@vuepress/plugin-medium-zoom": "^1.8.2",
+    "markdown-it-footnote": "^3.0.3",
+    "markdown-it-sub": "^1.0.0",
+    "markdown-it-sup": "^1.0.0",
+    "vuepress-plugin-mathjax": "^1.2.8"
+  }
+}

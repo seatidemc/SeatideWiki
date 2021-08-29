@@ -1,3 +1,26 @@
+const SIDEBAR = {
+	'入门': [
+		['/getting-started/mod-starter', '模组入门']
+	],
+	'Wiki 相关': [
+		['/wiki-commitment', '贡献指南']
+	]
+}
+
+function sidebar() {
+	let v;
+	let sidebar = [];
+	for (k of Object.keys(SIDEBAR)) {
+		v = SIDEBAR[k];
+		sidebar.push({
+			title: k,
+			collapsable: false,
+			children: v
+		})
+	}
+	return sidebar;
+}
+
 module.exports = {
 	title: 'SEATiDE Wiki',
 	description: 'SEATiDE 模组服的官方维基项目',
@@ -6,10 +29,15 @@ module.exports = {
 			{ text: '首页', link: '/' },
 			{ text: '官网', link: 'https://seatide.top' }
 		],
-		// sidebar: [createSidebarGroup('入门', 'intro')],
+		sidebar: sidebar(),
 		lastUpdated: '最后更新于',
 		search: true,
-		searchMaxSuggestions: 10
+		searchMaxSuggestions: 10,
+		editLinks: true,
+		editLinkText: '编辑此页面',
+		repoLabel: '查看源码',
+		repo: 'seatidemc/SeatideWiki',
+		smoothScroll: true
 	},
 	lastUpdated: '最后更新于',
 	markdown: {
@@ -24,26 +52,7 @@ module.exports = {
 		}
 	},
 	markdown: {
-		plugins: ['footnote', 'sup', 'sub'],
-		lineNumbers: true
+		plugins: ['footnote', 'sup', 'sub']
 	},
 	head: [['link', { rel: 'icon', href: 'https://fnmdp.oss-cn-beijing.aliyuncs.com/images/seatide-favicon.ico' }]]
 };
-
-function createSidebarGroup(title, name) {
-	return {
-		title,
-		collapsable: false,
-		children: getSidebar(name)
-	};
-}
-
-function getSidebar(name) {
-	let sidebar = {
-		intro: [
-			['/content/1.1', '1.1 插件的概念'],
-			['/content/1.2', '1.2 我们的第一个插件']
-		]
-	};
-	return sidebar[name];
-}

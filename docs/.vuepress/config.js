@@ -1,5 +1,5 @@
 const SIDEBAR = {
-	'入门': [
+	'新手': [
 		['/getting-started/mod-starter', '模组入门']
 	],
 	'Wiki 相关': [

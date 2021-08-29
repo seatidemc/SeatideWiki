@@ -1,11 +1,7 @@
 const SIDEBAR = {
-	'新手': [
-		['/getting-started/mod-starter', '模组入门']
-	],
-	'Wiki 相关': [
-		['/wiki-commitment', '贡献指南']
-	]
-}
+	新手: [['/getting-started/mod-starter', '模组入门']],
+	'Wiki 相关': [['/wiki-commitment', '贡献指南']]
+};
 
 function sidebar() {
 	let v;
@@ -16,7 +12,7 @@ function sidebar() {
 			title: k,
 			collapsable: false,
 			children: v
-		})
+		});
 	}
 	return sidebar;
 }
@@ -39,7 +35,6 @@ module.exports = {
 		repo: 'seatidemc/SeatideWiki',
 		smoothScroll: true
 	},
-	lastUpdated: '最后更新于',
 	markdown: {
 		plugins: ['footnote', 'sup', 'sub']
 	},
@@ -49,6 +44,20 @@ module.exports = {
 		},
 		mathjax: {
 			target: 'chtml'
+		},
+		'@vuepress/last-updated': {
+			transformer: (timestamp, lang) => {
+				const moment = require('moment');
+				moment.locale('zh-CN');
+				let m = moment(timestamp);
+				if (Math.abs(new Date().getTime() - m.toDate().getTime()) < 604800000) {
+					return m.fromNow();
+				}
+				return m.toDate().toLocaleDateString();
+			},
+			dateOptions: {
+				hour12: false
+			}
 		}
 	},
 	markdown: {

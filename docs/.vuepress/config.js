@@ -1,5 +1,6 @@
 const SIDEBAR = {
 	新手: [['/getting-started/mod-starter', '模组入门']],
+	关于: [['/about/operation', '运营理念']],
 	'Wiki 相关': [['/wiki-commitment', '贡献指南']]
 };
 

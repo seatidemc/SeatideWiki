@@ -50,11 +50,12 @@ module.exports = {
 			transformer: (timestamp, lang) => {
 				const moment = require('moment');
 				moment.locale('zh-CN');
-				let m = moment(timestamp);
-				if (Math.abs(new Date().getTime() - m.toDate().getTime()) < 604800000) {
-					return m.fromNow();
-				}
-				return m.toDate().toLocaleDateString();
+				const m = moment(timestamp);
+				// if (Math.abs(new Date().getTime() - m.toDate().getTime()) < 604800000) {
+				// 	return m.fromNow();
+				// }
+                                return m.fromNow();
+				// return m.toDate().toLocaleDateString();
 			},
 			dateOptions: {
 				hour12: false

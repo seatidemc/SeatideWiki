@@ -27,7 +27,7 @@ module.exports = {
 			{ text: '官网', link: 'https://seatide.top' }
 		],
 		sidebar: sidebar(),
-		lastUpdated: '最后更新于',
+		// lastUpdated: '最后更新于',
 		search: true,
 		searchMaxSuggestions: 10,
 		editLinks: true,

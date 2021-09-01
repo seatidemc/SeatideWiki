@@ -46,7 +46,7 @@ module.exports = {
 		mathjax: {
 			target: 'chtml'
 		},
-		'@vuepress/last-updated': {
+		/* '@vuepress/last-updated': {
 			transformer: (timestamp, lang) => {
 				const moment = require('moment');
 				moment.locale('zh-CN');
@@ -60,7 +60,7 @@ module.exports = {
 			dateOptions: {
 				hour12: false
 			}
-		}
+		} */
 	},
 	markdown: {
 		plugins: ['footnote', 'sup', 'sub']

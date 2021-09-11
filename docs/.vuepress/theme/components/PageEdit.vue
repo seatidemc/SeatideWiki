@@ -8,11 +8,10 @@
 		</div>
 
 		<div class="last-updated">
-			<span class="prefix" v-if="author">本页由 </span
+			<span class="prefix" v-if="author">作者 </span
 			><span class="time" v-if="author">{{ author }}</span
-			><span class="prefix" v-if="author"> 在 </span
+			><span v-if="author"> / </span><span class="prefix" v-if="releaseDate">发布日期 </span
 			><span class="time" v-if="releaseDate">{{ releaseDate }}</span>
-			<span class="prefix" v-if="releaseDate"> 发布</span>
 			<!-- <span class="prefix">{{ lastUpdatedText }}</span>
       <span class="time">{{ lastUpdated }}</span> -->
 		</div>

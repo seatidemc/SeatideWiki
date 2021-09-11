@@ -130,9 +130,9 @@ author: Subilan
 
 Wiki 使用的 VuePress 除了支持 Markdown 原本的语法以外，还支持一些拓展的 Markdown 语法。这些语法只能在本 Wiki（和其它用 VuePress 创建的 Wiki 上）使用。这些拓展的语法更有助于内容的呈现。
 
-#### 1. $\LaTeX$ 数学公式
+#### 1. $\mathrm{\LaTeX}$ 数学公式
 
-提供 $\LaTeX$ 支持，具体语法不多讲。示例：$E=mc^2$、$f(x) = \sum_{i=1}^N a_i^{j+k+l}$、$\int\int\int\int\int\int\int$。**已知问题：不能兼容一些较长或复杂的公式，在复制粘贴时请注意，必要时需要自行修改。**
+提供 $\mathrm{\LaTeX}$ 支持，具体语法不多讲。示例：$E=mc^2$、$f(x) = \sum_{i=1}^N a_i^{j+k+l}$、$\int\int\int\int\int\int\int$。**已知问题：不能兼容一些较长或复杂的公式，在复制粘贴时请注意，必要时需要自行修改。**
 
 #### 2. 颜色块
 

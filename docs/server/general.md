@@ -26,7 +26,6 @@ author: Subilan
 - 随机传送 — `/tpr`
 - 设置地域 — `/setwarp`
 - 帽子 — `/hat`
-- 
 
 ### 参数
 

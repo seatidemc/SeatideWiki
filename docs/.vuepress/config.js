@@ -27,7 +27,6 @@ module.exports = {
 			{ text: '官网', link: 'https://seatide.top' }
 		],
 		sidebar: sidebar(),
-		lastUpdated: '最后更新于',
 		search: true,
 		searchMaxSuggestions: 10,
 		editLinks: true,
@@ -45,17 +44,6 @@ module.exports = {
 		},
 		mathjax: {
 			target: 'chtml'
-		},
-		'@vuepress/last-updated': {
-			transformer: (timestamp, lang) => {
-				const moment = require('moment');
-				moment.locale('zh-CN');
-				const m = moment(timestamp);
-				if (Math.abs(new Date().getTime() - m.toDate().getTime()) < 604800000) {
-					return m.fromNow();
-				}
-				return m.toDate().toLocaleDateString();
-			},
 		}
 	},
 	markdown: {

@@ -1,3 +1,8 @@
+---
+date: 2021/08/29
+author: Subilan
+---
+
 # 贡献指南
 
 本页面将介绍进行贡献的基本方法以及一些需要知道的注意事项。**贡献**是指参与到本 Wiki 的编写或者修改的过程，面向所有 SEATiDE 玩家。我们使用 GitHub 存储 Wiki 的内容，你可以在[这里](https://github.com/seatidemc/SeatideWiki)找到项目本体。在贡献之前，请确保

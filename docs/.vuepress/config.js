@@ -3,7 +3,7 @@ const SIDEBAR = {
 		['/getting-started/mod-starter', '模组入门'],
 		['/getting-started/server-starter', '服务器入门']
 	],
-	服务器: [['/server/general', '通用设定']],
+	服务器: [['/server/general', '通用设定'], ['/server/manage', '管理']],
 	关于: [['/about/operation', '运营理念']],
 	'Wiki 相关': [['/wiki-commitment', '贡献指南']]
 };

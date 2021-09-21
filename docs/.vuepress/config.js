@@ -6,7 +6,8 @@ const SIDEBAR = {
 	服务器: [
 		['/server/general', '通用设定'],
 		['/server/manage', '管理'],
-		['/server/rules', '服务器规则']
+		['/server/rules', '服务器规则'],
+		['/server/downloads', '下载内容']
 	],
 	关于: [
 		['/about/operation', '运营理念'],

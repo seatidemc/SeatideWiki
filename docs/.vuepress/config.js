@@ -5,7 +5,7 @@ const SIDEBAR = {
 	],
 	服务器: [
 		['/server/general', '通用设定'],
-		['/server/commands', '常用指令']
+		['/server/commands', '常用指令'],
 		['/server/rules', '服务器规则'],
 		['/server/downloads', '下载内容']
 	],

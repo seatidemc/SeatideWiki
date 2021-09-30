@@ -5,15 +5,19 @@ const SIDEBAR = {
 	],
 	服务器: [
 		['/server/general', '通用设定'],
-		['/server/manage', '管理'],
+		['/server/commands', '常用指令']
 		['/server/rules', '服务器规则'],
 		['/server/downloads', '下载内容']
+	],
+	自动化: [
+		['/automation/tidelab-index', 'TiDELab 介绍'],
+		['/automation/basics', '机制']
 	],
 	关于: [
 		['/about/operation', '运营理念'],
 		['/about/ops', '管理团队']
 	],
-	'Wiki 相关': [['/wiki-commitment', '贡献指南']]
+	'Wiki 相关': [['/wiki-commitment', '贡献指南']],
 };
 
 function sidebar() {

@@ -9,7 +9,7 @@ const SIDEBAR = {
 		['/server/rules', '服务器规则'],
 		['/server/downloads', '下载内容']
 	],
-	自动化: [
+	维护和管理: [
 		['/automation/tidelab-index', 'TiDELab 介绍'],
 		['/automation/basics', '机制']
 	],

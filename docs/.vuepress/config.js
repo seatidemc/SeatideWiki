@@ -13,6 +13,9 @@ const SIDEBAR = {
 		['/automation/tidelab-index', 'TiDELab 介绍'],
 		['/automation/basics', '机制']
 	],
+	插件: [
+		['/plugins/special-zone', 'SpecialZone']
+	],
 	关于: [
 		['/about/operation', '运营理念'],
 		['/about/ops', '管理团队']

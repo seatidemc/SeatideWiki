@@ -1,1 +1,1 @@
-此页面主要内容已转至 [TiDELab 介绍](../automation/tidelab-index.md))。
+此页面主要内容已转至 [TiDELab 介绍](../automation/tidelab-index.md)。

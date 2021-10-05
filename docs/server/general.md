@@ -18,7 +18,9 @@ author: Subilan
 |传送须等待的时间|0|
 |世界难度|困难|
 |死亡不掉落<br/>`keepInventory`|✔|
-|防爆<br/>`mobGriefing`|❌|
+|防爆[^1]<br/>`mobGriefing`|❌|
 |火蔓延<br/>`doFireTick`|❌|
 |最大无人在线时间|1h，超出后实例将自动释放|
 |货币单位|$\int$，读作「积」|
+
+[^1]: 对应的 gamerule `mobGriefing` 影响生物的表现，若关闭将导致村民无法生孩子、无法拾起物品等问题。

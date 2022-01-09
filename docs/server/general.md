@@ -17,7 +17,7 @@ author: Subilan
 |传送与传送之间须等待的时间|5s|
 |传送须等待的时间|0|
 |世界难度|困难|
-|死亡不掉落<br/>`keepInventory`|✔|
+|死亡不掉落<br/>`keepInventory`|❌（st2）|
 |防爆[^1]<br/>`mobGriefing`|❌|
 |火蔓延<br/>`doFireTick`|❌|
 |最大无人在线时间|1h，超出后实例将自动释放|

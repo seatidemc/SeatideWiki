@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>贡献指南 | SEATiDE Wiki</title>
-    <meta name="generator" content="VuePress 1.8.2">
+    <meta name="generator" content="VuePress 1.9.5">
     <link rel="icon" href="https://fnmdp.oss-cn-beijing.aliyuncs.com/images/seatide-favicon.ico">
     <meta name="description" content="SEATiDE 模组服的官方维基项目">
     
-    <link rel="preload" href="/assets/css/0.styles.834b9ad8.css" as="style"><link rel="preload" href="/assets/js/app.3b8ce06b.js" as="script"><link rel="preload" href="/assets/js/2.5702eb69.js" as="script"><link rel="preload" href="/assets/js/3.30a6e2ca.js" as="script"><link rel="preload" href="/assets/js/21.f9c63994.js" as="script"><link rel="prefetch" href="/assets/js/10.97023734.js"><link rel="prefetch" href="/assets/js/11.dc8b343c.js"><link rel="prefetch" href="/assets/js/12.a5e3acb9.js"><link rel="prefetch" href="/assets/js/13.1057c89e.js"><link rel="prefetch" href="/assets/js/14.bc2c5daf.js"><link rel="prefetch" href="/assets/js/15.db5a9f79.js"><link rel="prefetch" href="/assets/js/16.8d401c4a.js"><link rel="prefetch" href="/assets/js/17.298d0324.js"><link rel="prefetch" href="/assets/js/18.b4732d3d.js"><link rel="prefetch" href="/assets/js/19.adfd8558.js"><link rel="prefetch" href="/assets/js/20.3041b24e.js"><link rel="prefetch" href="/assets/js/4.5aae9215.js"><link rel="prefetch" href="/assets/js/5.18bf0e24.js"><link rel="prefetch" href="/assets/js/6.af2721cf.js"><link rel="prefetch" href="/assets/js/7.3a520fbb.js"><link rel="prefetch" href="/assets/js/8.b45a68da.js"><link rel="prefetch" href="/assets/js/9.c9b93bc2.js">
+    <link rel="preload" href="/assets/css/0.styles.834b9ad8.css" as="style"><link rel="preload" href="/assets/js/app.348bab20.js" as="script"><link rel="preload" href="/assets/js/2.785d242b.js" as="script"><link rel="preload" href="/assets/js/3.affd7bb9.js" as="script"><link rel="preload" href="/assets/js/21.807f61b9.js" as="script"><link rel="prefetch" href="/assets/js/10.cf674c6d.js"><link rel="prefetch" href="/assets/js/11.470010a3.js"><link rel="prefetch" href="/assets/js/12.8498f22f.js"><link rel="prefetch" href="/assets/js/13.e632f883.js"><link rel="prefetch" href="/assets/js/14.8bf79446.js"><link rel="prefetch" href="/assets/js/15.4fc735c4.js"><link rel="prefetch" href="/assets/js/16.ae417cdd.js"><link rel="prefetch" href="/assets/js/17.22096658.js"><link rel="prefetch" href="/assets/js/18.922531da.js"><link rel="prefetch" href="/assets/js/19.f423401e.js"><link rel="prefetch" href="/assets/js/20.63902ff2.js"><link rel="prefetch" href="/assets/js/4.83569675.js"><link rel="prefetch" href="/assets/js/5.6db88321.js"><link rel="prefetch" href="/assets/js/6.2616dec5.js"><link rel="prefetch" href="/assets/js/7.2d360b45.js"><link rel="prefetch" href="/assets/js/8.48247be2.js"><link rel="prefetch" href="/assets/js/9.dc181347.js">
     <link rel="stylesheet" href="/assets/css/0.styles.834b9ad8.css">
   </head>
   <body>
@@ -30,23 +30,23 @@
 └─docs
    └─.vuepress
 </code></pre></div><table><thead><tr><th style="text-align:center;">位置</th> <th style="text-align:center;">用途</th> <th style="text-align:center;">备注</th></tr></thead> <tbody><tr><td style="text-align:center;"><code>/</code></td> <td style="text-align:center;">用于存放一些项目基本文件，例如 <code>.gitignore</code>、<code>package.json</code> 等</td> <td style="text-align:center;">一般编写时不涉及</td></tr> <tr><td style="text-align:center;"><code>.github</code></td> <td style="text-align:center;">存放自动部署文件，用于将你的提交自动发布到网页上</td> <td style="text-align:center;">一般编写时不涉及</td></tr> <tr><td style="text-align:center;"><code>docs</code></td> <td style="text-align:center;">存放内容文件</td> <td style="text-align:center;">编写的工作在这里进行</td></tr></tbody></table> <p>其中 <code>docs</code> 目录下有一个 <code>.vuepress</code> 文件夹，用于配置 VuePress 本身，一般编写时不涉及；其内部的 <code>config.js</code> 可用于配置侧边栏，在下文中会详细讲解。</p> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p><strong><code>docs</code> 目录的内部结构</strong></p> <p>一些<strong>比较基本、不易分类的内容</strong>直接放置在 <code>docs</code> 下，<strong>可以被分类的内容</strong>需要放置到<strong>相应</strong>的文件夹中。例如新手方面的所有内容（新手教程、指令大全等等）都应当放在 <code>docs/getting-started</code> 文件夹下，而一些不能被分类的基本内容（关于本站、FAQ 等）则直接放在 <code>docs</code> 下。</p></div> <h3 id="修改侧边栏"><a href="#修改侧边栏" class="header-anchor">#</a> 修改侧边栏</h3> <p>单单编写页面还不够，你还需要<strong>将它添加到侧边栏</strong>，否则读者并不能找到它（因为读者只能看到侧边栏里列出的页面）。侧边栏的相关配置在 <code>docs/.vuepress/config.js</code> 内。首先打开 <code>config.js</code>，找到 <code>const SIDEBAR</code>，其值就是侧边栏的配置。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">const</span> <span class="token constant">SIDEBAR</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
-	<span class="token string">'入门'</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+	<span class="token string-property property">'入门'</span><span class="token operator">:</span> <span class="token punctuation">[</span>
 		<span class="token punctuation">[</span><span class="token string">'/getting-started/mod-starter'</span><span class="token punctuation">,</span> <span class="token string">'模组入门'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
         <span class="token comment">// ...</span>
 	<span class="token punctuation">]</span><span class="token punctuation">,</span>
-	<span class="token string">'Wiki 相关'</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+	<span class="token string-property property">'Wiki 相关'</span><span class="token operator">:</span> <span class="token punctuation">[</span>
 		<span class="token punctuation">[</span><span class="token string">'/wiki-commitment'</span><span class="token punctuation">,</span> <span class="token string">'贡献指南'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
         <span class="token comment">// ...</span>
 	<span class="token punctuation">]</span><span class="token punctuation">,</span>
     <span class="token comment">// ...</span>
 <span class="token punctuation">}</span>
 </code></pre></div><p>以上内容对应以下结构</p> <p><img src="https://z3.ax1x.com/2021/08/29/hGAyIP.png" alt=""> <em>侧边栏的一角</em></p> <p>仿照该结构继续写下去即可，以下展示另一个侧边栏配置示例</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">const</span> <span class="token constant">SIDEBAR</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
-	<span class="token string">'文章类型 A'</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+	<span class="token string-property property">'文章类型 A'</span><span class="token operator">:</span> <span class="token punctuation">[</span>
 		<span class="token punctuation">[</span><span class="token string">'/a/hello-world'</span><span class="token punctuation">,</span> <span class="token string">'示例文章 A-1'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
         <span class="token punctuation">[</span><span class="token string">'/a/goodbye-world'</span><span class="token punctuation">,</span> <span class="token string">'示例文章 A-2'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
         <span class="token comment">// 就这样重复下去</span>
 	<span class="token punctuation">]</span><span class="token punctuation">,</span>
-	<span class="token string">'文章类型 B'</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+	<span class="token string-property property">'文章类型 B'</span><span class="token operator">:</span> <span class="token punctuation">[</span>
         <span class="token punctuation">[</span><span class="token string">'/b/hello-world'</span><span class="token punctuation">,</span> <span class="token string">'示例文章 B-1'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
         <span class="token punctuation">[</span><span class="token string">'/b/goodbye-world'</span><span class="token punctuation">,</span> <span class="token string">'示例文章 B-2'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
         <span class="token comment">// 就这样重复下去</span>
@@ -54,7 +54,7 @@
     <span class="token comment">// 就这样重复下去</span>
 <span class="token punctuation">}</span>
 </code></pre></div><p>其中每一个项目的格式为 <code>['文章路径', '文章标题']</code>，文章路径以 <code>/</code> 开头，代表 <code>docs</code> 目录，然后以指向的文件名称结尾，末尾可以不带 <code>.md</code> 后缀。文章标题是最终显示在侧边栏里代表本页面的文本。</p> <p>一般在完成一篇文本后，按照此方式即可将自己的文本归类到侧边栏的相应的类别中。提交更改后，你所添加的项目也将出现在侧边栏里。</p> <h3 id="文档属性"><a href="#文档属性" class="header-anchor">#</a> 文档属性</h3> <p>借助于 VuePress 提供的 frontmatter 特性，你可以在 Markdown 文档里指定文档属性。当前 SEATiDE Wiki 支持的文档属性有</p> <table><thead><tr><th style="text-align:center;">属性</th> <th style="text-align:center;">值示例</th> <th style="text-align:left;">用途</th></tr></thead> <tbody><tr><td style="text-align:center;">date</td> <td style="text-align:center;">2021/09/11</td> <td style="text-align:left;">手动标记本页面的发布日期。建议除了首页以外的每一个页面都加上此属性。<strong>为了统一，请使用<code>年/月（含前导零）/日</code>的格式。</strong></td></tr> <tr><td style="text-align:center;">author</td> <td style="text-align:center;">Subilan</td> <td style="text-align:left;">标记本页面的作者，将会显示在页面的底部。</td></tr></tbody></table> <p>若要为文档添加属性，请在文档的开头用 <code>---</code> 划定一个区域，然后用 <code>名称: 值</code> 的形式进行表达：</p> <div class="language-markdown extra-class"><pre class="language-markdown"><code><span class="token front-matter-block"><span class="token punctuation">---</span>
-<span class="token font-matter yaml language-yaml">date: 2021/09/11
+<span class="token front-matter yaml language-yaml">date: 2021/09/11
 author: Subilan</span>
 <span class="token punctuation">---</span></span>
 
@@ -94,6 +94,6 @@ jkl
       <a href="/about/ops.html" class="prev">
         管理团队
       </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
-    <script src="/assets/js/app.3b8ce06b.js" defer></script><script src="/assets/js/2.5702eb69.js" defer></script><script src="/assets/js/3.30a6e2ca.js" defer></script><script src="/assets/js/21.f9c63994.js" defer></script>
+    <script src="/assets/js/app.348bab20.js" defer></script><script src="/assets/js/2.785d242b.js" defer></script><script src="/assets/js/3.affd7bb9.js" defer></script><script src="/assets/js/21.807f61b9.js" defer></script>
   </body>
 </html>

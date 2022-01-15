@@ -17,4 +17,4 @@ author: Subilan
 
 ## [ServerIpUpdate-1.0.jar](https://fnmdp.oss-cn-beijing.aliyuncs.com/seatide-public/ServerIpUpdate-1.0.jar)
 
-由 SEATiDE 玩家所作。一个用于自动获取服务器 IP 的模组，安装后自动刷新 IP。这样就不需要每次前往[官网的状态页面](https://seatide.top/status)查看 IP 了。
+由 SEATiDE 玩家所作。一个用于自动获取服务器 IP 的模组，安装后自动刷新 IP。这样就不需要每次前往[官网的状态页面](https://seatide.top/#/status)查看 IP 了。

@@ -17,10 +17,12 @@ author: Subilan
 |传送与传送之间须等待的时间|5s|
 |传送须等待的时间|0|
 |世界难度|困难|
-|死亡不掉落<br/>`keepInventory`|❌（st2）|
-|防爆[^1]<br/>`mobGriefing`|❌|
-|火蔓延<br/>`doFireTick`|❌|
+|出生点保护|No|
+|死亡不掉落[^1]<br/>`keepInventory`|No（st2）|
+|防爆[^2]<br/>`mobGriefing`|No|
+|火蔓延<br/>`doFireTick`|No|
 |最大无人在线时间|1h，超出后实例将自动释放|
 |货币单位|$\int$，读作「积」|
 
-[^1]: 对应的 gamerule `mobGriefing` 影响生物的表现，若关闭将导致村民无法生孩子、无法拾起物品等问题。
+[^1]: `keepInventory` 大大降低了游戏难度，为了避免快餐游戏，我们关闭了 `keepInventory`。将来大概率不会再开启。
+[^2]: 对应的 gamerule `mobGriefing` 影响生物的表现，若关闭将导致村民无法生孩子、无法拾起物品等问题。

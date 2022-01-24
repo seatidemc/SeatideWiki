@@ -52,7 +52,9 @@ module.exports = {
 		editLinkText: '编辑此页面',
 		repoLabel: '查看源码',
 		repo: 'seatidemc/SeatideWiki',
-		smoothScroll: true
+		docsDir: 'docs',
+		smoothScroll: true,
+		logo: 'https://fnmdp.oss-cn-beijing.aliyuncs.com/images/st-white-small.png'
 	},
 	markdown: {
 		plugins: ['footnote', 'sup', 'sub']

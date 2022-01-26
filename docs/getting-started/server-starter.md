@@ -25,7 +25,7 @@ author: Subilan
 - 在准备客户端、开始游戏之前，请确保你的系统中已经安装了 Java。由于本服版本为 1.16.5，所以没有对 Java 16 的硬性要求。如果你还没有 Java，可以选择下面的一个链接下载。这些链接都是由清华大学开源软件镜像站提供的。此处仅提供 Windows 的 Java 下载，其它系统和版本的 Java 请在[这里](https://mirrors.tuna.tsinghua.edu.cn/AdoptOpenJDK)浏览。
   - [OpenJDK JRE 16 HotSpot (64 位)](https://mirrors.tuna.tsinghua.edu.cn/AdoptOpenJDK/16/jre/x64/windows/OpenJDK16U-jre_x64_windows_hotspot_16.0.1_9.msi)
   - [OpenJDK JRE 16 OpenJ9 (64 位)](https://mirrors.tuna.tsinghua.edu.cn/AdoptOpenJDK/16/jre/x64/windows/ibm-semeru-open-jre_x64_windows_16.0.2_7_openj9-0.27.0.msi)
-  - [OpenJDK JRE 11 HotSpot (64 位)](https://mirrors.tuna.tsinghua.edu.cn/AdoptOpenJDK/11/jre/x64/windows/OpenJDK11U-jre_x64_windows_hotspot_11.0.12_7.msi)
+  - [OpenJDK JRE 11 HotSpot (64 位)](https://mirrors.tuna.tsinghua.edu.cn/AdoptOpenJDK/11/jre/x64/windows/OpenJDK11U-jre_x64_windows_hotspot_11.0.14_9.msi)
   - [OpenJDK JRE 11 OpenJ9 (64 位)](https://mirrors.tuna.tsinghua.edu.cn/AdoptOpenJDK/11/jre/x64/windows/OpenJDK11U-jre_x64_windows_openj9_windowsXL_11.0.10_9_openj9-0.24.0.msi)
 - 下文中所有提供的文件仅适用于 Windows 操作系统。
 :::

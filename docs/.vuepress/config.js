@@ -53,8 +53,7 @@ module.exports = {
 		repoLabel: '查看源码',
 		repo: 'seatidemc/SeatideWiki',
 		docsDir: 'docs',
-		smoothScroll: true,
-		logo: 'https://fnmdp.oss-cn-beijing.aliyuncs.com/images/st-white-small.png'
+		smoothScroll: true
 	},
 	markdown: {
 		plugins: ['footnote', 'sup', 'sub']

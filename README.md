@@ -1,6 +1,6 @@
 # SeatideWiki
 
-[访问网站](//w.seatide.top)
+[访问网站](https://w.seatide.top)
 
 **SeatideWiki** 是 SEATiDE Minecraft 服务器的维基项目，用来陈述一些**在服务器内的常见问题的解决方法**和**模组的基础入门知识**。对于某一特定模组的深入知识，我们推荐浏览 [MCMOD 百科](https://www.mcmod.cn)，在本维基上不会*深入*解释。
 

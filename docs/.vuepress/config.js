@@ -14,7 +14,8 @@ const SIDEBAR = {
 		['/automation/basics', '机制']
 	],
 	插件: [
-		['/plugins/special-zone', 'SpecialZone']
+		['/plugins/special-zone', 'SpecialZone'],
+		['/plugins/seatide-core', 'seatide-core']
 	],
 	关于: [
 		['/about/operation', '运营理念'],

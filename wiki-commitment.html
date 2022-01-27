@@ -8,7 +8,7 @@
     <link rel="icon" href="https://fnmdp.oss-cn-beijing.aliyuncs.com/images/seatide-favicon.ico">
     <meta name="description" content="SEATiDE 模组服的官方维基项目">
     
-    <link rel="preload" href="/assets/css/0.styles.834b9ad8.css" as="style"><link rel="preload" href="/assets/js/app.6e747c16.js" as="script"><link rel="preload" href="/assets/js/2.9dc255b7.js" as="script"><link rel="preload" href="/assets/js/3.abb7e9ba.js" as="script"><link rel="preload" href="/assets/js/21.0c61fa1f.js" as="script"><link rel="prefetch" href="/assets/js/10.4d3660cd.js"><link rel="prefetch" href="/assets/js/11.03eadc53.js"><link rel="prefetch" href="/assets/js/12.59b999c8.js"><link rel="prefetch" href="/assets/js/13.e7c47a8d.js"><link rel="prefetch" href="/assets/js/14.456851fe.js"><link rel="prefetch" href="/assets/js/15.4a962dc4.js"><link rel="prefetch" href="/assets/js/16.430ffbcf.js"><link rel="prefetch" href="/assets/js/17.bd2f8acb.js"><link rel="prefetch" href="/assets/js/18.e9495a48.js"><link rel="prefetch" href="/assets/js/19.708e6901.js"><link rel="prefetch" href="/assets/js/20.078ef092.js"><link rel="prefetch" href="/assets/js/4.868ed830.js"><link rel="prefetch" href="/assets/js/5.b4ae6e78.js"><link rel="prefetch" href="/assets/js/6.f54e8dd7.js"><link rel="prefetch" href="/assets/js/7.9ecd7629.js"><link rel="prefetch" href="/assets/js/8.2d78c99d.js"><link rel="prefetch" href="/assets/js/9.68d6986e.js">
+    <link rel="preload" href="/assets/css/0.styles.834b9ad8.css" as="style"><link rel="preload" href="/assets/js/app.cfb4683e.js" as="script"><link rel="preload" href="/assets/js/2.9dc255b7.js" as="script"><link rel="preload" href="/assets/js/3.abb7e9ba.js" as="script"><link rel="preload" href="/assets/js/21.9fc3112d.js" as="script"><link rel="prefetch" href="/assets/js/10.4d3660cd.js"><link rel="prefetch" href="/assets/js/11.03eadc53.js"><link rel="prefetch" href="/assets/js/12.59b999c8.js"><link rel="prefetch" href="/assets/js/13.e7c47a8d.js"><link rel="prefetch" href="/assets/js/14.456851fe.js"><link rel="prefetch" href="/assets/js/15.4a962dc4.js"><link rel="prefetch" href="/assets/js/16.430ffbcf.js"><link rel="prefetch" href="/assets/js/17.bd2f8acb.js"><link rel="prefetch" href="/assets/js/18.b5a572ac.js"><link rel="prefetch" href="/assets/js/19.708e6901.js"><link rel="prefetch" href="/assets/js/20.078ef092.js"><link rel="prefetch" href="/assets/js/4.868ed830.js"><link rel="prefetch" href="/assets/js/5.b4ae6e78.js"><link rel="prefetch" href="/assets/js/6.f54e8dd7.js"><link rel="prefetch" href="/assets/js/7.9ecd7629.js"><link rel="prefetch" href="/assets/js/8.2d78c99d.js"><link rel="prefetch" href="/assets/js/9.68d6986e.js">
     <link rel="stylesheet" href="/assets/css/0.styles.834b9ad8.css">
   </head>
   <body>
@@ -54,8 +54,8 @@
     <span class="token comment">// 就这样重复下去</span>
 <span class="token punctuation">}</span>
 </code></pre></div><p>其中每一个项目的格式为 <code>['文章路径', '文章标题']</code>，文章路径以 <code>/</code> 开头，代表 <code>docs</code> 目录，然后以指向的文件名称结尾，末尾可以不带 <code>.md</code> 后缀。文章标题是最终显示在侧边栏里代表本页面的文本。</p> <p>一般在完成一篇文本后，按照此方式即可将自己的文本归类到侧边栏的相应的类别中。提交更改后，你所添加的项目也将出现在侧边栏里。</p> <h3 id="文档属性"><a href="#文档属性" class="header-anchor">#</a> 文档属性</h3> <p>借助于 VuePress 提供的 frontmatter 特性，你可以在 Markdown 文档里指定文档属性。当前 SEATiDE Wiki 支持的文档属性有</p> <table><thead><tr><th style="text-align:center;">属性</th> <th style="text-align:center;">值示例</th> <th style="text-align:left;">用途</th></tr></thead> <tbody><tr><td style="text-align:center;">date</td> <td style="text-align:center;">2021/09/11</td> <td style="text-align:left;">手动标记本页面的发布日期。建议除了首页以外的每一个页面都加上此属性。<strong>为了统一，请使用<code>年/月（含前导零）/日</code>的格式。</strong></td></tr> <tr><td style="text-align:center;">author</td> <td style="text-align:center;">Subilan</td> <td style="text-align:left;">标记本页面的作者，将会显示在页面的底部。</td></tr></tbody></table> <p>若要为文档添加属性，请在文档的开头用 <code>---</code> 划定一个区域，然后用 <code>名称: 值</code> 的形式进行表达：</p> <div class="language-markdown extra-class"><pre class="language-markdown"><code><span class="token front-matter-block"><span class="token punctuation">---</span>
-<span class="token front-matter yaml language-yaml">date: 2021/09/11
-author: Subilan</span>
+<span class="token front-matter yaml language-yaml"><span class="token key atrule">date</span><span class="token punctuation">:</span> 2021/09/11
+<span class="token key atrule">author</span><span class="token punctuation">:</span> Subilan</span>
 <span class="token punctuation">---</span></span>
 
 <span class="token title important"><span class="token punctuation">#</span> 正文标题</span>
@@ -94,6 +94,6 @@ jkl
       <a href="/about/ops.html" class="prev">
         管理团队
       </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
-    <script src="/assets/js/app.6e747c16.js" defer></script><script src="/assets/js/2.9dc255b7.js" defer></script><script src="/assets/js/3.abb7e9ba.js" defer></script><script src="/assets/js/21.0c61fa1f.js" defer></script>
+    <script src="/assets/js/app.cfb4683e.js" defer></script><script src="/assets/js/2.9dc255b7.js" defer></script><script src="/assets/js/3.abb7e9ba.js" defer></script><script src="/assets/js/21.9fc3112d.js" defer></script>
   </body>
 </html>

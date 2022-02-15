@@ -27,11 +27,11 @@ date: 2022/01/26
 |`unload <世界名>`|`xen.command.unload`|从已加载中卸载世界|
 |`list`|`xen.command.list`|列出当前可以传送至的世界|
 |`reloadPlugin`|`xen.command.reloadPlugin`|重载配置文件|
-|`difficulty [set|get] <世界名> <值>`|设置或者获取指定世界的难度|
-|`setworldspawn`|强制设置当前所处世界的**全局出生点**为脚下位置|
-|`rule [set|get] <世界名> <规则名> <值>`|设置或者获取指定世界的游戏规则|
+|`difficulty [set|get] <世界名> <值>`|`xen.command.difficulty`|设置或者获取指定世界的难度|
+|`setworldspawn`|`xen.command.setworldspawn`|强制设置当前所处世界的**全局出生点**为脚下位置|
+|`gamerule [set|get] <世界名> <规则名> <值>`|`xen.command.rule`|设置或者获取指定世界的游戏规则|
 
-其中，对于**世界类型**和**环境**的解释如下：
+`difficulty` 也可以简写为 `diff`。其中，对于**世界类型**和**环境**的解释如下：
 
 - 世界类型 `WorldType`
   - 含义：决定世界的生成方式

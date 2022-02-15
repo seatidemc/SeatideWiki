@@ -14,7 +14,9 @@ const SIDEBAR = {
 	],
 	插件: [
 		['/plugins/special-zone', 'SpecialZone'],
-		['/plugins/seatide-core', 'seatide-core']
+		['/plugins/seatide-core', 'seatide-core'],
+		['/plugins/xen', 'Xen'],
+		['/plugins/remote', 'Remote']
 	],
 	关于: [
 		['/about/operation', '运营理念'],

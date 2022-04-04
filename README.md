@@ -12,4 +12,4 @@ SeatideWiki 是一本所有人都可以编辑的电子书，只要你会 Markdow
 
 <img class="no-style" alt="創用 CC 授權條款" style="border-width:0" src="https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png" />
 
-本项目使用 VuePress + TravisCI + GitHubPages 实现文档的部署，以 MIT 开源代码。本项目内的一切文本内容均遵循 [CC BY-NC-ND-4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) 协议，不得用于盈利。
+本项目使用 VuePress + GitHubActions + GitHubPages 实现文档的部署，以 MIT 开源代码。本项目内的一切文本内容均遵循 [CC BY-NC-ND-4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) 协议，不得用于盈利。
